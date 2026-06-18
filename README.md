@@ -246,14 +246,6 @@ MIT License - Feel free to use for learning and projects
 
 ---
 
-## 👤 Author
-
-Volkan Deniz  
-Computer Engineering Student | TEKNOFEST Participant  
-[@GitHub](https://github.com/volkan)
-
----
-
 ## 🎯 Learning Outcomes
 
 After studying this project, you'll understand:
