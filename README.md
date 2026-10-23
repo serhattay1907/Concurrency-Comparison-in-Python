@@ -17,11 +17,11 @@ The goal is to understand when to use **Threads** and when to use **Multiprocess
 ```
 Concurrency Comparison in Python/
 │
-├── SIR Model Testing/
+├── SIR Model Test/
 │   ├── 1-CPU_BOUND_PROCESSES.py      (Multiprocessing approach)
 │   └── 2-CPU_BOUND_THREADS_1.py      (Threading approach)
 │
-└── File Read&Write Test/
+└── File Read & Write Test/
     ├── 3-IO_BOUND_PROCESSES_2.py     (Multiprocessing approach)
     └── 4-IO_BOUND_THREADS_1.py       (Threading approach)
 ```
@@ -39,7 +39,7 @@ python 3.8+
 
 **CPU-Bound (SIR Model):**
 ```bash
-cd "SIR Model Testing"
+cd "SIR Model Test"
 
 # Compare performance
 python 1-CPU_BOUND_PROCESSES.py
@@ -48,7 +48,7 @@ python 2-CPU_BOUND_THREADS_1.py
 
 **I/O-Bound (File Operations):**
 ```bash
-cd "File Read&Write Test"
+cd "File Read & Write Test"
 
 # Compare performance
 python 3-IO_BOUND_PROCESSES_2.py
@@ -76,7 +76,7 @@ Python's GIL prevents true parallelism in threads for CPU-bound tasks. Multiproc
 
 ## 🧪 Project Details
 
-### 1️⃣ **SIR Model Testing** (CPU-Bound)
+### 1️⃣ **SIR Model Test** (CPU-Bound)
 
 **What is SIR Model?**
 - Susceptible → Infected → Recovered epidemiological model
@@ -97,7 +97,7 @@ Threading:       ~3-5 seconds (much slower)
 
 ---
 
-### 2️⃣ **File Read&Write Test** (I/O-Bound)
+### 2️⃣ **File Read & Write Test** (I/O-Bound)
 
 **What is I/O-Bound?**
 - File operations (read/write)
@@ -201,14 +201,14 @@ print(f"Total time: {end_time - start_time:.4f} seconds")
 ## 📝 Example Output
 
 ```bash
-$ python "SIR Model Testing/1-CPU_BOUND_PROCESSES.py"
+$ python "SIR Model Test/1-CPU_BOUND_PROCESSES.py"
 Process 1 finished with 987.45 infected and 2.34 recovered after 100 days.
 Process 2 finished with 987.45 infected and 2.34 recovered after 100 days.
 Process 3 finished with 987.45 infected and 2.34 recovered after 100 days.
 Process 4 finished with 987.45 infected and 2.34 recovered after 100 days.
 Total time for processes: 0.8234 seconds.
 
-$ python "SIR Model Testing/2-CPU_BOUND_THREADS_1.py"
+$ python "SIR Model Test/2-CPU_BOUND_THREADS_1.py"
 Thread 1 finished with 987.45 infected and 2.34 recovered after 100 days.
 Thread 2 finished with 987.45 infected and 2.34 recovered after 100 days.
 Thread 3 finished with 987.45 infected and 2.34 recovered after 100 days.
